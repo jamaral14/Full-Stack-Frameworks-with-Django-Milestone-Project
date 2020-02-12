@@ -20,3 +20,27 @@ body {
     height: 150px;
     margin: 0 auto;
 }
+
+caption p {
+    word-wrap: break-word;
+}
+
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.panel-default {
+    border-color: transparent;
+    padding: 0 10px;
+}
+
+.panel-body {
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+.product-description {
+    min-height: 40px;
+}
