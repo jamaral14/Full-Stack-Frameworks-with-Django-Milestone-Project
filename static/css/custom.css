@@ -1,20 +1,15 @@
 body {
     font-family: Arial;
-    padding-top: 50px;
-
+    padding-top: 100px;
 }
 
-.active-blue-4 input[type=text]:focus:not([readonly]) {
-  border: 1px solid #1d51fa;
-  box-shadow: 0 0 0 1px #0720f8;
-}
 
 .icon-bar {
     background-color: #fff;
 }
 
-.form-control {
-    margin-top: 20px;
+.accountform {
+    padding-top: 20px;
 }
 
 .badge {
