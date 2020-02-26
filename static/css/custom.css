@@ -3,6 +3,11 @@ body {
     padding-top: 50px;
 }
 
+.img-fluid {
+    width: 100%;
+    height: 100%;
+}
+
 .navbar {
     background-image: linear-gradient(#c14452, #c14452 60%, #c14452);
     background-repeat: no-repeat;
