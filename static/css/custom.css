@@ -58,9 +58,13 @@ caption p {
     padding: 0 10px;
 }
 
+.panel {
+    border: 1px solid black;
+}
+
 .panel-body {
     height: 100%;
-    border: 1px solid #ddd;
+   
 }
 
 .product-description {
