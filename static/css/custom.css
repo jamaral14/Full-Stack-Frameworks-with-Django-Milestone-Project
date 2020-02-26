@@ -67,6 +67,16 @@ caption p {
     min-height: 40px;
 }
 
+
+.row-color {
+    background-color: #e6e6e6;
+}
+
+.checkout-padding {
+    padding: 10px;
+}
+
+
 .full {
     width: 100%;    
 }
