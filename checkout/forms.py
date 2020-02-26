@@ -20,6 +20,7 @@ class MakePaymentForm(forms.Form):
 
   # More Details and prove of address, full name, country
 
+
 class OrderForm(forms.ModelForm):
 
     class Meta:
