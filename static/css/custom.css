@@ -1,6 +1,12 @@
 body {
     font-family: Arial;
-    padding-top: 100px;
+    padding-top: 50px;
+}
+
+.navbar {
+    background-image: linear-gradient(#c14452, #c14452 60%, #c14452);
+    background-repeat: no-repeat;
+    border-color: #c14452;
 }
 
 .navbar-header {
@@ -71,7 +77,7 @@ caption p {
 	display: block;
 }
 .footer {
-	background: #002147;
+	background: #c14452;
 	height: auto;
 	padding-bottom: 30px;
 	position: relative;
