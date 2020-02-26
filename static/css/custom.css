@@ -3,7 +3,10 @@ body {
     padding-top: 100px;
 }
 
+.navbar-header {
+    padding: 10px;
 
+}
 .icon-bar {
     background-color: #fff;
 }
