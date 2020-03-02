@@ -70,7 +70,7 @@
       </p>
   </div>
 </div>
-<img src="media/images/hero_1.jpg" class="img-fluid" alt="Responsive image">
+<img src= "{{ MEDIA_URL }}images/hero_1.jpg" class="img-fluid" alt="Responsive image">
   </header>  
 
  <div class="container"> 
@@ -100,7 +100,6 @@
                     </ul>
                 </div>
                
-            <!--/.row--> 
         </div>
         <!--/.container--> 
     </div>
@@ -115,5 +114,13 @@
     <!--/.footer-bottom--> 
 
 </footer>
+
+<script type="text/javascript">
+$('.collapse').collapse()
+$('#myCollapsible').collapse({
+  toggle: false
+})
+</script>
+
 </body>
 </html>
