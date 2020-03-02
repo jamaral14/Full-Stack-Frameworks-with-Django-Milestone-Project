@@ -8,6 +8,10 @@ body {
     height: 50%;
 }
 
+.navbar-default .navbar-collapse .navbar-toggle {
+    border-color: #c14452;
+}
+
 .navbar {
     background-image: linear-gradient(#c14452, #c14452 60%, #c14452);
     background-repeat: no-repeat;
@@ -141,8 +145,7 @@ caption p {
   padding: 0 0 8px 0;
 }
 
-.email{
-  border-bottom: 3px solid #fff;
+
 }
 .footer ul li a {
 	padding: 0 0 12px 0;
@@ -201,6 +204,7 @@ caption p {
   }
   .navbar-toggle {
       display: block;
+
   }
   .navbar-collapse {
       border-top: 1px solid transparent;
