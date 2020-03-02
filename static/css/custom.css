@@ -4,8 +4,8 @@ body {
 }
 
 .img-fluid {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
 }
 
 .navbar {
@@ -38,6 +38,7 @@ body {
 .badge-warning[href] {
     background-color: #c67605;
 }
+
 
 .product {
     background-size: contain;
