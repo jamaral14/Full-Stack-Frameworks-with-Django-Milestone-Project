@@ -8,9 +8,6 @@ body {
     height: 50%;
 }
 
-.navbar-default .navbar-collapse .navbar-toggle {
-    border-color: #c14452;
-}
 
 .navbar {
     background-image: linear-gradient(#c14452, #c14452 60%, #c14452);
