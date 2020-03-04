@@ -68,6 +68,16 @@
 			</div>
 		</div>
 	</nav>
+<br>
+    	{% if messages %}
+	<div class="alert alert-success">
+		<div class="messages">
+			{% for message in messages %}
+			{{ message }}
+			{% endfor %}
+		</div>
+	</div>
+	{% endif %} 
 
 	<header>
 
@@ -76,7 +86,7 @@
 
 	</header>
 
-    <br>
+		<br>
 
 		<div class="jumbotron">
 			<div class="text-white text-center py-5 px-4">
@@ -85,58 +95,59 @@
 			</div>
 		</div>
 
-	<div class="container">
+		<div class="container">
 
-		{% block content %} {% endblock %}
-	</div>
+			{% block content %} {% endblock %}
+		</div>
 
-	<footer>
-		<div class="footer" id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<h4> Wine House </h4>
-						<ul>
-							<li>
-								<h5> <a href="https://www.latlong.net/c/?lat=40.712776&long=-74.005974">Click here Find
-										US</a> </h5>
-							</li>
-						</ul>
-					</div>
-					<div class="col-lg-3 col-sm-2 col-xs-3">
-						<h3> Contact </h3>
-						<ul>
-							<li>
-								<p> New York, NY 10012, US </p>
-							</li>
-							<br>
-							<li>
-								<p> codeinstitute@example.com </p>
-							</li>
-							<br>
-							<li>
-								<p> + 01 234 567 88</p>
-							</li>
-							<li>
-								<p> + 01 234 567 89 </p>
-							</li>
-						</ul>
-					</div>
-
-				</div>
-				<!--/.container-->
-			</div>
-			<!--/.footer-->
-
-			<div class="footer-bottom">
+		<footer>
+			<div class="footer" id="footer">
 				<div class="container">
-					<p class="pull-left copyright"> Copyright © Footer J.A. Code Institute </p>
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+							<h4> Wine House </h4>
+							<ul>
+								<li>
+									<h5> <a href="https://www.latlong.net/c/?lat=40.712776&long=-74.005974">Click here
+											Find
+											US</a> </h5>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-2 col-xs-3">
+							<h3> Contact </h3>
+							<ul>
+								<li>
+									<p> New York, NY 10012, US </p>
+								</li>
+								<br>
+								<li>
+									<p> codeinstitute@example.com </p>
+								</li>
+								<br>
+								<li>
+									<p> + 01 234 567 88</p>
+								</li>
+								<li>
+									<p> + 01 234 567 89 </p>
+								</li>
+							</ul>
+						</div>
 
+					</div>
+					<!--/.container-->
 				</div>
-			</div>
-			<!--/.footer-bottom-->
+				<!--/.footer-->
 
-	</footer>
+				<div class="footer-bottom">
+					<div class="container">
+						<p class="pull-left copyright"> Copyright © Footer J.A. Code Institute </p>
+
+					</div>
+				</div>
+				<!--/.footer-bottom-->
+
+		</footer>
 
 
 </body>
