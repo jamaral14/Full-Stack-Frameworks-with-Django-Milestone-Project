@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-#import env
+from os import path
+if path.exists("env.py"):
+   import env
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -26,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['joao-ecommerce-project.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -171,3 +173,5 @@ MEDIA_URL = '/media/'
 
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
