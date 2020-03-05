@@ -56,7 +56,8 @@ MEDIA_URL =
 9. Log in to the admin panel by going to '127.0.0.1:8000/admin' and log in using the credentials you created for the superuser.
 You will see something like this:
 
-![img](media/images/django-admin.png)
+![img](/media/images/django-admin.png)
+Format: ![Alt Text](url)
 
 
 
