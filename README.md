@@ -11,7 +11,7 @@ It is a Ecommerce site built with Python's *Django* framework - no template was 
 
 Follow the below instructions to download this project for Windows (This instructions could be different for Mac) and I used gitpod to do my project.
 
-1. Start with [gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template) provides extensions and tools.
+1. Start with [gitpod-full-template](https://github.com/Code-Institute-Org/gitpod-full-template) provides extensions and tools for  for Code Institute students.
 Open the gitpod tempate and install Django:
 `pip3 install django==1.11.24`
 
@@ -56,8 +56,8 @@ MEDIA_URL =
 9. Log in to the admin panel by going to '127.0.0.1:8000/admin' and log in using the credentials you created for the superuser.
 You will see something like this:
 
-![img](/media/images/django-admin.png)
-Format: ![Alt Text](url)
+![](/media/images/django-admin.png)
+
 
 
 
