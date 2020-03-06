@@ -5,7 +5,7 @@
 It is a Ecommerce site built with Python's *Django* framework - no template was used.
 
 
-#Live Demo
+# Live Demo
 
 **Link to view deployed version of the web app https://git.heroku.com/joao-ecommerce-project.git**
 
@@ -71,6 +71,69 @@ You will see something like this:
 
 ![](/media/images/django-admin.png)
 
+
+10. Django-countries I used this page to install countries on my checkout payment forms (https://github.com/SmileyChris/django-countries#installation)
+
+ #### Installation
+
+ 1. ```pip install django-countries```
+ 2. Add ```django_countries to INSTALLED_APPS```
+
+ #### CountryField
+
+Consider the following model using a CountryField:
+
+```
+from django.db import models
+from django_countries.fields import CountryField
+
+class Person(models.Model):
+    name = models.CharField(max_length=100)
+    country = CountryField()
+```    
+
+11. Setting up Heroku
+
+
+Heroku=
+I went to [Heroku](https://www.heroku.com/) to set up an app 'Wine House'
+
+Resources> add database **Postgres** choose **'HobbyDev Free'**
+
+gitpod =
+``` pip3 install dj-database-url``` package allows connection to a database URL. ``` pip3 install psycopg2```
+
+- Create a requirements.txt file  ```pip3 freeze > requirements.txt```
+
+**import dj_database_url** at top of settings.py file and change default sqlite3 database to be default dj_database_url
+
+```DATABASES = { 'default' :dj_database_url.parse(os.environ.get('DATABASE_URL')) }```
+Add DATABASE_URL config vars code to env.py 
+Make migrations to migrate all files to new database.
+
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+```
+Create new superuser via ```python3 manage.py createsuperuser``` and add username, email and password.
+This will be production database for deploying on Heroku
+
+Ensure Heroku has all Config Vars required = SECRET_KEY, STRIPE_SECRET, STRIPE_PUBLISHABLE, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+add DISABLE_COLLECTSTATIC and set to 1 this will disable staticfiles from being added to Heroku meaning can use AWS bucket.
+
+
+- Deploy>GitHub
+- Install gunicorn
+- Ensure all dependencies are added to requirements.txt with command ```pip3 freeze > requirements.txt```
+- Create and add a file called **Procfile** which contains text 'web: gunicorn ecommerce.wsgi:application'
+```git add, git commit, git push```
+- Heroku >deploy branch
+- Heroku >more >restart all dynos to ensure that the project is updated.
+
+Make sure you put the your Heroku git URL here ``` ALLOWED_HOSTS = [] ```
+
+And then you can run your apllicaction on Heroku.
 
 
 ## Built with 
@@ -173,46 +236,13 @@ There was a few Features left to implement such as :
 - [PEP8](http://pep8online.com/) for Python validation.
 - [Test Cards](https://stripe.com/docs/testing#cards) tested that all fields requires completion.
 
+# Credits
 
-# Setting up Heroku
+#### Content
 
+To do my Django-countries [github-SmileyChris] (https://github.com/SmileyChris/django-countries)
 
-Heroku=
-I went to [Heroku](https://www.heroku.com/) to set up an app 'Wine House'
+#### Media 
 
-Resources> add database **Postgres** choose **'HobbyDev Free'**
+Some of my images are from this wine website (https://www.totalwine.com/) and this one (https://colorlib.com/wp/wine-website-templates/)
 
-gitpod =
-``` pip3 install dj-database-url``` package allows connection to a database URL. ``` pip3 install psycopg2```
-
-- Create a requirements.txt file  ```pip3 freeze > requirements.txt```
-
-**import dj_database_url** at top of settings.py file and change default sqlite3 database to be default dj_database_url
-
-```DATABASES = { 'default' :dj_database_url.parse(os.environ.get('DATABASE_URL')) }```
-Add DATABASE_URL config vars code to env.py 
-Make migrations to migrate all files to new database.
-
-```
-python3 manage.py makemigrations
-python3 manage.py migrate
-
-```
-Create new superuser via ```python3 manage.py createsuperuser``` and add username, email and password.
-This will be production database for deploying on Heroku
-
-Ensure Heroku has all Config Vars required = SECRET_KEY, STRIPE_SECRET, STRIPE_PUBLISHABLE, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
-add DISABLE_COLLECTSTATIC and set to 1 this will disable staticfiles from being added to Heroku meaning can use AWS bucket.
-
-
-- Deploy>GitHub
-- Install gunicorn
-- Ensure all dependencies are added to requirements.txt with command ```pip3 freeze > requirements.txt```
-- Create and add a file called **Procfile** which contains text 'web: gunicorn ecommerce.wsgi:application'
-```git add, git commit, git push```
-- Heroku >deploy branch
-- Heroku >more >restart all dynos to ensure that the project is updated.
-
-Make sure you put the your Heroku git URL here ``` ALLOWED_HOSTS = [] ```
-
-And then you can run your apllicaction on Heroku.
