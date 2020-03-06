@@ -10,6 +10,12 @@ It is a Ecommerce site built with Python's *Django* framework - no template was 
 **Link to view deployed version of the web app https://git.heroku.com/joao-ecommerce-project.git**
 
 
+# UX
+
+This website is for any user interested in buying Wine online, wine sales are growing into a bigger slice of the overall sales pie.
+The ecommerce shop is for both the online shopping browser, who may only access the site via mobile, or tablet. This person have to be +18 (Minimum Legal Age Limits).
+
+
 
 # Installation
 
@@ -147,12 +153,6 @@ And then you can run your apllicaction on Heroku.
 # Deployment / Hosting
 
 This Project was deployed and is hosted on Heroku with automatic deploys from GitHub.
-
-# UX
-
-This website is for any user interested in buying Wine online, wine sales are growing into a bigger slice of the overall sales pie.
-The ecommerce shop is for both the online shopping browser, who may only access the site via mobile, or tablet. This person have to be +18 (Minimum Legal Age Limits).
-
 
 
 # Features
