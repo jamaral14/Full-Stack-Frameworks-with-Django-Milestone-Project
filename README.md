@@ -4,10 +4,21 @@
 **Ecommerce & Blog Web Application with User Authentication and Stripe Payments**
 It is a Ecommerce site built with Python's *Django* framework - no template was used.
 
+
 #Live Demo
+
 **Link to view deployed version of the web app https://git.heroku.com/joao-ecommerce-project.git**
 
+
+
 ## Installation
+
+ #### User Authentication
+    - login/logout/registration and password request features via completion of relevant forms.
+      - specific logged in user access 
+        - create/update/delete review
+         - edit delivery address
+            - see orders placed
 
 Follow the below instructions to download this project for Windows (This instructions could be different for Mac) and I used gitpod to do my project.
 
@@ -60,7 +71,6 @@ You will see something like this:
 
 
 
-
 ## Built with 
 1. Django
 2. Python
@@ -72,3 +82,61 @@ You will see something like this:
 ## Deployment / Hosting
 
 This Project was deployed and is hosted on Heroku with automatic deploys from GitHub.
+
+#UX
+
+This website is for any user interested in buying Wine online, wine sales are growing into a bigger slice of the overall sales pie.
+The ecommerce shop is for both the online shopping browser, who may only access the site via mobile, or tablet. This person have to be +18 (Minimum Legal Age Limits).
+
+
+
+# Features
+
+## Existing Features
+
+#### e-Commerce Functionality
+    - easy to use checkout system (user must log in)
+    - search bar to search for products
+    - add and remove products from cart
+    - single payment
+
+####  Products (provided logged in)    
+    - add own product images
+    - edit/update and delete your Products
+
+#### Navigation    
+     - can look at products - shop
+     - can register for account or login
+     - can search for products via search bar
+     - can add products to cart, but cannot checkout
+
+#### Responsive UI Browser/ Device compatible
+
+    - Chrome
+    - Edge
+
+    - Laptop/Computer
+    - Tablet
+
+# Features Left to Implement
+
+There was a few Features left to implement such as :
+
+    - Contact Us Form (email from to contact us)
+    - Review Products (add a review/rate star on product)
+    - Advanced product pages to select sizes of products.
+    - Add custom 403, 404, 400, 500, error pages.
+
+## Technologies Used
+
+- [gitpod](https://www.gitpod.io/) online code editor for development of the project.
+- CSS for website styling with mobile-first styling and bootstrap grid system used for layout.
+- [Django](https://www.djangoproject.com/) Python-based free open source web-framework to create the project.
+- [Github](https://github.com/) for version control.
+- HTML5 for basic markup language and provide semantic elements to webpage design.
+- [jQuery](https://jquery.com/) to manage events and effects for enhanced user experience.
+- JavaScript-for UI enhancements.
+
+
+### Deployment:
+- [Gunicorn](https://gunicorn.org/) - A Python package, used for running HTTP servers to connect to Heroku.
