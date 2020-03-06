@@ -8,7 +8,7 @@ body {
     height: 50%;
 }
 
-
+/* ----------------------------------Navbar*/
 .navbar {
     background-image: linear-gradient(#c14452, #c14452 60%, #c14452);
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
 .accountform {
     padding-top: 20px;
 }
-
+/* ----------------------------------badge*/
 .badge {
     padding-left: 9px;
     padding-right: 9px;
@@ -40,7 +40,7 @@ body {
     background-color: #c67605;
 }
 
-
+/* ----------------------------------Product*/
 .product {
     background-size: contain;
     background-position: center center;
@@ -97,6 +97,8 @@ caption p {
 	clear: both;
 	display: block;
 }
+
+/* ----------------------------------Footer*/
 .footer {
 	background: #c14452;
 	height: auto;
