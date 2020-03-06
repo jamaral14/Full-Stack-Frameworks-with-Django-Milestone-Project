@@ -13,6 +13,8 @@ It is a Ecommerce site built with Python's *Django* framework - no template was 
 
 ## Installation
 
+ - I used Code Institute lessons to make this project.
+
  #### User Authentication
     - login/logout/registration and password request features via completion of relevant forms.
       - specific logged in user access 
@@ -163,7 +165,6 @@ There was a few Features left to implement such as :
 - [Font Awesome](https://fontawesome.bootstrapcheatsheets.com/) for styling.
 
 ### Testing:
-- [Coverage](https://coverage.readthedocs.io/en/v4.5.x/) for displaying test reports from Django unit tests.
 - [Travis CI](http://travis-ci.org) which runs tests on code every time it is pushed to GitHub.
 - [HTML validator](https://validator.w3.org/)
 - [CSS validator](https://jigsaw.w3.org/css-validator/)
@@ -171,4 +172,15 @@ There was a few Features left to implement such as :
 - Tested entire site on [Responsinator](http://www.responsinator.com) as backup to ensure responsiveness.
 - [PEP8](http://pep8online.com/) for Python validation.
 - [Test Cards](https://stripe.com/docs/testing#cards) tested that all fields requires completion.
+
+
+# Setting up Heroku
+
+Heroku=
+I went to [Heroku](https://www.heroku.com/) to set up an app 'Wine House'
+
+Resources> add database **Postgres** choose **'HobbyDev Free'**
+
+gitpod =
+``` pip3 install dj-database-url``` package allows connection to a database URL. ``` 
 
