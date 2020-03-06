@@ -83,7 +83,7 @@ You will see something like this:
 
 This Project was deployed and is hosted on Heroku with automatic deploys from GitHub.
 
-#UX
+# UX
 
 This website is for any user interested in buying Wine online, wine sales are growing into a bigger slice of the overall sales pie.
 The ecommerce shop is for both the online shopping browser, who may only access the site via mobile, or tablet. This person have to be +18 (Minimum Legal Age Limits).
@@ -140,3 +140,35 @@ There was a few Features left to implement such as :
 
 ### Deployment:
 - [Gunicorn](https://gunicorn.org/) - A Python package, used for running HTTP servers to connect to Heroku.
+- [Heroku](https://www.heroku.com/) for deployment and hosting of project.
+
+### SQL Database:
+- [dj-database-url](https://pypi.org/project/dj-database-url/) - package allows connection to a database URL (eg Heroku Postgres).
+- [Heroku Postgres](https://www.heroku.com/postgres) - cloud-based Postgres managed SQL database to use in deployment instead of sqlite3 for production.
+- [Psycopg2](https://pypi.org/project/psycopg2/) - package to connect to Postgres databases.
+- [SQLite3 DB](https://docs.python.org/2/library/sqlite3.html) - the standard database on django using Django's ORM in development for local testing.
+
+
+### Storage
+ 
+
+- [Pillow](https://pypi.org/project/Pillow/) allows uploading of images through admin page.
+- [Amazon Web Services (AWS)](https://aws.amazon.com/)
+- [S3 Storage](https://aws.amazon.com/s3/?nc2=type_a) used to store mediafiles (images) and staticfiles (JS, CSS, Font Awesome) on cloud-based storage.
+
+
+## Styling:
+- [Django-Forms-Bootstrap](https://pypi.org/project/django-forms-bootstrap/) to allow usage of bootstrap in templates.
+- [Bootstrap](https://getbootstrap.com/) for responsive simplistic layouts.
+- [Font Awesome](https://fontawesome.bootstrapcheatsheets.com/) for styling.
+
+### Testing:
+- [Coverage](https://coverage.readthedocs.io/en/v4.5.x/) for displaying test reports from Django unit tests.
+- [Travis CI](http://travis-ci.org) which runs tests on code every time it is pushed to GitHub.
+- [HTML validator](https://validator.w3.org/)
+- [CSS validator](https://jigsaw.w3.org/css-validator/)
+- [Jasmine](https://jasmine.github.io/pages/getting_started.html)
+- Tested entire site on [Responsinator](http://www.responsinator.com) as backup to ensure responsiveness.
+- [PEP8](http://pep8online.com/) for Python validation.
+- [Test Cards](https://stripe.com/docs/testing#cards) tested that all fields requires completion.
+
