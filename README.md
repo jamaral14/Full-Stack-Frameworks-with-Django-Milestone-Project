@@ -11,7 +11,7 @@ It is a Ecommerce site built with Python's *Django* framework - no template was 
 
 
 
-## Installation
+# Installation
 
  - I used Code Institute lessons to make this project.
 
@@ -74,7 +74,7 @@ You will see something like this:
 
 10. Django-countries I used this page to install countries on my checkout payment forms (https://github.com/SmileyChris/django-countries#installation)
 
- #### Installation
+ #### Installation CountryField
 
  1. ```pip install django-countries```
  2. Add ```django_countries to INSTALLED_APPS```
@@ -92,7 +92,7 @@ class Person(models.Model):
     country = CountryField()
 ```    
 
-11. Setting up Heroku
+## Setting up Heroku
 
 
 Heroku=
@@ -136,7 +136,7 @@ Make sure you put the your Heroku git URL here ``` ALLOWED_HOSTS = [] ```
 And then you can run your apllicaction on Heroku.
 
 
-## Built with 
+# Built with 
 1. Django
 2. Python
 2. HTML
@@ -144,7 +144,7 @@ And then you can run your apllicaction on Heroku.
 4. Bootstrap
 5. SQLite database
 
-## Deployment / Hosting
+# Deployment / Hosting
 
 This Project was deployed and is hosted on Heroku with automatic deploys from GitHub.
 
@@ -192,7 +192,7 @@ There was a few Features left to implement such as :
     - Advanced product pages to select sizes of products.
     - Add custom 403, 404, 400, 500, error pages.
 
-## Technologies Used
+# Technologies Used
 
 - [gitpod](https://www.gitpod.io/) online code editor for development of the project.
 - CSS for website styling with mobile-first styling and bootstrap grid system used for layout.
@@ -203,7 +203,7 @@ There was a few Features left to implement such as :
 - JavaScript-for UI enhancements.
 
 
-### Deployment:
+# Deployment:
 - [Gunicorn](https://gunicorn.org/) - A Python package, used for running HTTP servers to connect to Heroku.
 - [Heroku](https://www.heroku.com/) for deployment and hosting of project.
 
@@ -215,14 +215,12 @@ There was a few Features left to implement such as :
 
 
 ### Storage
- 
-
 - [Pillow](https://pypi.org/project/Pillow/) allows uploading of images through admin page.
 - [Amazon Web Services (AWS)](https://aws.amazon.com/)
 - [S3 Storage](https://aws.amazon.com/s3/?nc2=type_a) used to store mediafiles (images) and staticfiles (JS, CSS, Font Awesome) on cloud-based storage.
 
 
-## Styling:
+### Styling:
 - [Django-Forms-Bootstrap](https://pypi.org/project/django-forms-bootstrap/) to allow usage of bootstrap in templates.
 - [Bootstrap](https://getbootstrap.com/) for responsive simplistic layouts.
 - [Font Awesome](https://fontawesome.bootstrapcheatsheets.com/) for styling.
