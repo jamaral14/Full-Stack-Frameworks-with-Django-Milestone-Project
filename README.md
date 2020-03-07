@@ -2,7 +2,15 @@
 
 # Wine House
 **Ecommerce & Blog Web Application with User Authentication and Stripe Payments**
-It is a Ecommerce site built with Python's *Django* framework - no template was used.
+It is a Ecommerce site built with Python's *Django* framework course from [Code Institute](https://codeinstitute.net/) - no template was used.
+The project will demonstrate what I have learnt in the course from frontend, backend and full stack web development.
+The rapid expansion of the Internet has dramatically changed the landscape of commerce, including that of wine. Nowadays, you can easily find, order and get wine shipped to your door from the comfort of your own home.
+However, there are certain ways to go about it, and obstacles you will face, notably due to state shipping regulations. Here’s a guide to the web of online retailing.
+
+**When to Buy Online**
+
+Shopping for wine online is best suited to buying fine wine and bottles that are a little harder to find. “If you’re looking for $8, $9, $10 bottles of wine, it doesn’t make as much sense to buy online,” says Tom Wark, executive director of the National Association of Wine Retailers.
+“However, if you’re looking more along the lines of $30, $40, $50, $100 a bottle, then the price of shipping becomes a smaller percentage of your overall purchase.” Wark adds that shipping wine is expensive, because it’s heavy, so it’s rare to find free or discounted shipping deals the way you might with other commerce transactions.
 
 
 # Live Demo
@@ -19,7 +27,7 @@ The ecommerce shop is for both the online shopping browser, who may only access 
 
 # Installation
 
- - I used Code Institute lessons to make this project.
+ - I used [Code Institute](https://codeinstitute.net/) lessons to make this project.
 
  #### User Authentication
     - login/logout/registration and password request features via completion of relevant forms.
