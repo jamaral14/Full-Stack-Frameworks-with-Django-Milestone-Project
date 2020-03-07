@@ -6,10 +6,10 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 
-class Review(models.Model):
+class Post(models.Model):
 
     """
-    A single review
+    A single Post
     """
 
     five_stars = '★★★★★'
@@ -39,7 +39,7 @@ class Review(models.Model):
     published_date = models.DateTimeField(
         blank=True, null=True, default=timezone.now)
     views = models.IntegerField(default=0)
-    image = models.ImageField(upload_to="img", blank=True, null=True)
+    image = models.ImageField(upload_to="media", blank=True, null=True)
 
     def __str__(self):
         return self.title
