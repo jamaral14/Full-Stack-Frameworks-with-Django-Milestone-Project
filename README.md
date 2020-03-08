@@ -298,8 +298,21 @@ There was a few Features left to implement such as :
 #### Content
 
 To do my Django-countries [github-SmileyChris] (https://github.com/SmileyChris/django-countries)
+[Code Institute](https://codeinstitute.net/)
 
 # Media 
 
 Some of my images are from this wine website (https://www.totalwine.com/) and this one (https://colorlib.com/wp/wine-website-templates/)
+
+# Acknowledgements
+
+[Code Institute](https://codeinstitute.net/)
+
+* Code Institute Tutors:
+
+*	Haley Schafer
+*   Tim
+*   Kevin
+*   Stephen
+
 
