@@ -9,6 +9,12 @@ The project will demonstrate what I have learnt in the course from frontend, bac
 The rapid expansion of the Internet has dramatically changed the landscape of commerce, including that of wine. Nowadays, you can easily find, order and get wine shipped to your door from the comfort of your own home.
 However, there are certain ways to go about it, and obstacles you will face, notably due to state shipping regulations. Here’s a guide to the web of online retailing.
 
+The project incorporates code pulled from other projects learnt on Code Institute coursework and adapted for the final project needs, including:
+
+* [django-e-commerce](https://github.com/Code-Institute-Solutions/PuttingItAllTogether-Ecommerce) project,
+* [django-auth](https://github.com/Code-Institute-Solutions/AuthenticationAndAuthorisation) which is already incorporated in the django e-commerce project
+* [django-blog](https://github.com/Code-Institute-Solutions/BlogAllAboutIt) which was adapted for the reviews functionality.
+
 **Why to Buy Online**
 
 Shopping for wine online is best suited to buying fine wine and bottles that are a little harder to find. “If you’re looking for $8, $9, $10 bottles of wine, it doesn’t make as much sense to buy online,” says Tom Wark, executive director of the National Association of Wine Retailers.
