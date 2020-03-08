@@ -1,24 +1,24 @@
 [![Build Status](https://travis-ci.org/jamaral14/Full-Stack-Frameworks-with-Django-Milestone-Project.svg?branch=master)](https://travis-ci.org/jamaral14/Full-Stack-Frameworks-with-Django-Milestone-Project)
+# Wine House
+**Ecommerce & Blog Web Application with User Authentication and Stripe Payments**
 
 ![](/media/images/hero_1.jpg)
 
-# Wine House
-**Ecommerce & Blog Web Application with User Authentication and Stripe Payments**
+
 It is a Ecommerce site built with Python's *Django* framework course from [Code Institute](https://codeinstitute.net/) - no template was used.
-The project will demonstrate what I have learnt in the course from frontend, backend and full stack web development.
-The rapid expansion of the Internet has dramatically changed the landscape of commerce, including that of wine. Nowadays, you can easily find, order and get wine shipped to your door from the comfort of your own home.
-However, there are certain ways to go about it, and obstacles you will face, notably due to state shipping regulations. Here’s a guide to the web of online retailing.
+
+**Why to Buy Online**
+The project will demonstrate what I have learned in the course from frontend, backend and full stack web development.
+Wine House is a fictitious e-commerce shop that provides a selection of fine wines that are difficult to find in any physical store. 
+This website is for any user interested in buying Wine online, wine sales are growing into a bigger slice of the overall sales pie.
+The ecommerce shop is for both the online shopping browser, who may only access the site via mobile, or tablet. This person have to be +18 (Minimum Legal Age Limits).
+The buyers can be restaurants, wine shops or for customer directly. 
 
 The project incorporates code pulled from other projects learnt on Code Institute coursework and adapted for the final project needs, including:
 
 * [django-e-commerce](https://github.com/Code-Institute-Solutions/PuttingItAllTogether-Ecommerce) project,
 * [django-auth](https://github.com/Code-Institute-Solutions/AuthenticationAndAuthorisation) which is already incorporated in the django e-commerce project
 * [django-blog](https://github.com/Code-Institute-Solutions/BlogAllAboutIt) which was adapted for the reviews functionality.
-
-**Why to Buy Online**
-
-Shopping for wine online is best suited to buying fine wine and bottles that are a little harder to find. “If you’re looking for $8, $9, $10 bottles of wine, it doesn’t make as much sense to buy online,” says Tom Wark, executive director of the National Association of Wine Retailers.
-“However, if you’re looking more along the lines of $30, $40, $50, $100 a bottle, then the price of shipping becomes a smaller percentage of your overall purchase.” Wark adds that shipping wine is expensive, because it’s heavy, so it’s rare to find free or discounted shipping deals the way you might with other commerce transactions.
 
 
 # Live Demo
@@ -54,13 +54,18 @@ Shopping for wine online is best suited to buying fine wine and bottles that are
 [Media](#Media)
 
 
-
-
-
 # UX
 
-This website is for any user interested in buying Wine online, wine sales are growing into a bigger slice of the overall sales pie.
-The ecommerce shop is for both the online shopping browser, who may only access the site via mobile, or tablet. This person have to be +18 (Minimum Legal Age Limits).
+This website is for any user interested in buying fine wines that are not commonly found easily in any wine shops or supermarkets. The ecommerce shop is for both the online shopping browser, the working person on the go, who may only access the site via mobile, or tablet, and individual that is looking for a special reserve or a limited-edition bottle. 
+Wine House online shop has been designed to be easy to use, where customers can see what options are available for purchase and add to their cart.
+The shop also allows to add an online review and to see reviews made by other purchasers.
+The purchasing system is easy to use and allows for quick checkout. A drop down with a list of countries has been included in order to facilitate typing. 
+
+Three main users were created:
+
+1.	Superuser (admin) can add products, description of product, price and image.
+2.	General browsing users who are potential customers who have browsed on to the website but did not register
+3.	Authenticated users who are customer of the site by registering (adding their contact details and creating a user and password)
 
 
 
