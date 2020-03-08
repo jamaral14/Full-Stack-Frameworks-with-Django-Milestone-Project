@@ -17,6 +17,37 @@ Shopping for wine online is best suited to buying fine wine and bottles that are
 
 **Link to view deployed version of the web app https://git.heroku.com/joao-ecommerce-project.git**
 
+# Index
+
+[UX](#UX)
+
+[Installation](#Installation)
+
+[Setting up Heroku](#Setting-up-Heroku)
+
+[Built with](#Built-with)
+
+[Deployment / Hosting](#Deployment-/-Hosting)
+
+[Features](#Features)
+
+..[Existing Features](##Existing-Features)
+
+..[e-Commerce Functionality](####e-Commerce-Functionality)
+
+[Features Left to Implement](#Features-Left-to-Implement)
+
+[Technologies Used](#Technologies-Used)
+
+[Deployment](#Deployment)
+
+[Credits](#Credits)
+
+[Media](#Media)
+
+
+
+
 
 # UX
 
@@ -55,9 +86,9 @@ Here (env.py) you can put all your secret Keys, and put it on .gitignore **MAKE 
 
 5. Hide/create secret keys and generate secret keys / stripe secret key
 Make sure you create this secret keys, if you download the project they will not be there
-
 * A new SECRET_KEY can be generated [here](https://www.miniwebtool.com/django-secret-key-generator/)
 * Set up an account with Stripe [here](https://stripe.com/gb) & input STRIPE_PUBLISHABLE_KEY & STRIPE_SECRET_KEY
+If working locally you will need to update the settings.py and comment back in env.py.
 
 6. Go to setting.py (line 153 to 175)  and this is what you should change
 
@@ -80,13 +111,17 @@ MEDIA_URL =
     `$ python manage.py createsuperuser` - this will create admin support so you can change or add product
     `$ python manage.py runserver` this is how you run your local project
 
-9. Log in to the admin panel by going to '127.0.0.1:8000/admin' and log in using the credentials you created for the superuser.
+9. To run the project on localhost, run the following in the Gitpod terminal:
+```python3 manage.py runserver```
+
+
+10. Log in to the admin panel by going to '127.0.0.1:8000/admin' and log in using the credentials you created for the superuser.
 You will see something like this:
 
 ![](/media/images/django-admin.png)
 
 
-10. Django-countries I used this page to install countries on my checkout payment forms (https://github.com/SmileyChris/django-countries#installation)
+11. Django-countries I used this page to install countries on my checkout payment forms (https://github.com/SmileyChris/django-countries#installation)
 
  #### Installation CountryField
 
@@ -106,7 +141,7 @@ class Person(models.Model):
     country = CountryField()
 ```    
 
-## Setting up Heroku
+# Setting up Heroku
 
 
 Heroku=
@@ -114,13 +149,11 @@ I went to [Heroku](https://www.heroku.com/) to set up an app 'Wine House'
 
 Resources> add database **Postgres** choose **'HobbyDev Free'**
 
-gitpod =
-``` pip3 install dj-database-url``` package allows connection to a database URL. ``` pip3 install psycopg2```
-
+For use of Heroku Postgres =
+- On Gitpod console install dj-database-url: ` pip3 install dj-database-url`. This package allows connection to a database URL.
+- Then install psycopg2  `pip3 install psycopg2` which allows connection to the postgres database.
 - Create a requirements.txt file  ```pip3 freeze > requirements.txt```
-
 **import dj_database_url** at top of settings.py file and change default sqlite3 database to be default dj_database_url
-
 ```DATABASES = { 'default' :dj_database_url.parse(os.environ.get('DATABASE_URL')) }```
 Add DATABASE_URL config vars code to env.py 
 Make migrations to migrate all files to new database.
@@ -135,10 +168,13 @@ This will be production database for deploying on Heroku
 
 Ensure Heroku has all Config Vars required = SECRET_KEY, STRIPE_SECRET, STRIPE_PUBLISHABLE, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
 add DISABLE_COLLECTSTATIC and set to 1 this will disable staticfiles from being added to Heroku meaning can use AWS bucket.
+To allow deployment via github automatic/manual select Deploy> GitHub> connect to repo = 'ecommerce' in Heroku menu. For automatic deployment select button 'enable automatic deploys'.
+Otherwise use manual deployment to 'deploy branch'.
 
+Gitpod=
 
 - Deploy>GitHub
-- Install gunicorn
+- Install gunicorn ` pip3 install gunicorn`.
 - Ensure all dependencies are added to requirements.txt with command ```pip3 freeze > requirements.txt```
 - Create and add a file called **Procfile** which contains text 'web: gunicorn ecommerce.wsgi:application'
 ```git add, git commit, git push```
@@ -148,6 +184,7 @@ add DISABLE_COLLECTSTATIC and set to 1 this will disable staticfiles from being 
 Make sure you put the your Heroku git URL here ``` ALLOWED_HOSTS = [] ```
 
 And then you can run your apllicaction on Heroku.
+
 
 
 # Built with 
@@ -226,6 +263,7 @@ There was a few Features left to implement such as :
 - [Pillow](https://pypi.org/project/Pillow/) allows uploading of images through admin page.
 - [Amazon Web Services (AWS)](https://aws.amazon.com/)
 - [S3 Storage](https://aws.amazon.com/s3/?nc2=type_a) used to store mediafiles (images) and staticfiles (JS, CSS, Font Awesome) on cloud-based storage.
+- [Django-storages and Boto3](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html) to connect to AWS S3 bucket
 
 
 ### Styling:
@@ -248,7 +286,7 @@ There was a few Features left to implement such as :
 
 To do my Django-countries [github-SmileyChris] (https://github.com/SmileyChris/django-countries)
 
-#### Media 
+# Media 
 
 Some of my images are from this wine website (https://www.totalwine.com/) and this one (https://colorlib.com/wp/wine-website-templates/)
 
