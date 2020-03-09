@@ -301,7 +301,8 @@ There was a few Features left to implement such as :
 
 # Known Issues 
 
-The image display on Reviews are too big on Samsung 10.
+The image display on Reviews are too big on Samsung 10.  This does not affect the overall functionality of the website. 
+
 
 # Credits
 
