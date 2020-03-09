@@ -8,7 +8,7 @@
         </div>
         <div class="col-sm-10 col-md-9">
             {% if post.image %}
-                <img class="img-blogpost" src="/media/{{ post.image }}">
+                <img class="img-blogpost" src="/media/{{ product.image }}">
             {% endif %}
             <h3>{{ post.title }}</h3>
             <div class="row">
@@ -18,7 +18,6 @@
                     <p><span class="boldtext">Views:</span> {{post.views}}</p>
                     <p><span class="boldtext">Tag:</span> {{ post.tag }}</p>
                     <a href="{% url 'get_posts' %}" class="btn btn-default">Back to Blog</a>
-                    <a href="{% url 'edit_post' post.id %}" class="btn btn-default">Edit Post</a>
                     <hr>
                 </div>
             </div>
