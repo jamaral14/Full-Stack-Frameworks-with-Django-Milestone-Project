@@ -293,6 +293,16 @@ There was a few Features left to implement such as :
 - [PEP8](http://pep8online.com/) for Python validation.
 - [Test Cards](https://stripe.com/docs/testing#cards) tested that all fields requires completion.
 
+
+# Device Testing
+
+* Samsung 10
+* Samsnusg 9
+
+# Known Issues 
+
+The image display on Reviews are too big on Samsung 10.
+
 # Credits
 
 #### Content
