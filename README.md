@@ -246,7 +246,7 @@ This Project was deployed and is hosted on Heroku with automatic deploys from Gi
 There was a few Features left to implement such as :
 
     - Contact Us Form (email from to contact us)
-    - Review Products (add a review/rate star on product)
+    - Review Products (rate star on product)
     - Advanced product pages to select sizes of products.
     - Add custom 403, 404, 400, 500, error pages.
 
@@ -315,5 +315,6 @@ Some of my images are from this wine website (https://www.totalwine.com/) and th
 *   Kevin
 *   Stephen
 *   Anna 
+*   Luca
 
 
