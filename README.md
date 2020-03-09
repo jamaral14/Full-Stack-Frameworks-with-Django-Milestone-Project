@@ -309,7 +309,7 @@ Once Entry criteria for UAT are satisfied, following are the tasks need to be pe
 3. Create UAT Test Cases
 4. Run the Test cases
 
-* UAT have been performed by end user: 
+**UAT have been performed by end user:**
 
 - Finding
 - Manage to create an account 
@@ -325,16 +325,17 @@ The image display on Reviews are too big on Samsung 10.  This does not affect th
 
 #### Content
 
-To do my Django-countries [github-SmileyChris] (https://github.com/SmileyChris/django-countries)
-[Code Institute](https://codeinstitute.net/)
+- To do my Django-countries [github-SmileyChris] (https://github.com/SmileyChris/django-countries)
+
+- [Code Institute](https://codeinstitute.net/)
 
 # Media 
 
-Some of my images are from this wine website (https://www.totalwine.com/) and this one (https://colorlib.com/wp/wine-website-templates/)
+- Some of my images are from this wine website (https://www.totalwine.com/) and this one (https://colorlib.com/wp/wine-website-templates/)
 
 # Acknowledgements
 
-[Code Institute](https://codeinstitute.net/)
+- [Code Institute](https://codeinstitute.net/)
 
 * Code Institute Tutors:
 
