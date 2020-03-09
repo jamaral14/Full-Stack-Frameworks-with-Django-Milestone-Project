@@ -14,7 +14,7 @@ This website is for any user interested in buying Wine online, wine sales are gr
 The ecommerce shop is for both the online shopping browser, who may only access the site via mobile, or tablet. This person have to be +18 (Minimum Legal Age Limits).
 The buyers can be restaurants, wine shops or for customer directly. 
 
-The project incorporates code pulled from other projects learnt on Code Institute coursework and adapted for the final project needs, including:
+The project incorporates code pulled from other projects learned on Code Institute coursework and adapted for the final project needs, including:
 
 * [django-e-commerce](https://github.com/Code-Institute-Solutions/PuttingItAllTogether-Ecommerce) project,
 * [django-auth](https://github.com/Code-Institute-Solutions/AuthenticationAndAuthorisation) which is already incorporated in the django e-commerce project
@@ -310,9 +310,10 @@ Some of my images are from this wine website (https://www.totalwine.com/) and th
 
 * Code Institute Tutors:
 
-*	Haley Schafer
+*	Haley 
 *   Tim
 *   Kevin
 *   Stephen
+*   Anna 
 
 

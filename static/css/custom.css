@@ -98,6 +98,66 @@ caption p {
 	display: block;
 }
 
+/*-------------------Post*/
+
+.thumbnail {
+    margin-bottom: 8px;
+}
+
+.img-container {
+    overflow: hidden;
+    height: 170px;
+}
+
+.img-container img {
+    min-width: 280px;
+    min-height: 180px;
+    max-width: 380px;
+    max-height: 280px;
+}
+
+.img-circle{
+    width:100px;
+    height: 100px; 
+}
+
+.img-blogpost{
+    height: 300px;
+    width: auto;
+}
+
+.txt-container {
+    overflow: hidden;
+    height: 100px;
+}
+
+.panel .lead {
+    overflow: hidden;
+    height: 90px;
+}
+
+.label-float {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: .9;
+    padding: 6px;
+    color: #fff;
+}
+
+.boldtext{
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    #masthead h1 {
+        font-size: 80px;
+    }
+}
+
+
 /* ----------------------------------Footer*/
 .footer {
 	background: #c14452;
