@@ -299,6 +299,23 @@ There was a few Features left to implement such as :
 * Samsung 10
 * Samsnusg 9
 
+# User Acceptance Testing (UAT)
+
+**UAT is done in the final phase of testing after functional, integration and system testing is done.**
+
+Once Entry criteria for UAT are satisfied, following are the tasks need to be performed by the testers:
+1. Creation of UAT test plan.
+2. Identify Test Scenarios
+3. Create UAT Test Cases
+4. Run the Test cases
+
+* UAT have been performed by end user: 
+
+- Finding
+- Manage to create an account 
+- Loggin detais worked 
+- Added a review ( refer to Ms Melo's review)  
+
 # Known Issues 
 
 The image display on Reviews are too big on Samsung 10.  This does not affect the overall functionality of the website. 
